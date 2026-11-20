@@ -1,0 +1,6 @@
+{
+  "name": "SNSPD Lab — Single Photon Detection",
+  "description": "Interactive 3D scientific visualization exploring Superconducting Nanowire Single-Photon Detector (SNSPD) physics, hotspot formation, current crowding, and cryogenic readout dynamics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

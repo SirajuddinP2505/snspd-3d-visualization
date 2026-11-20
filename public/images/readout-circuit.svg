@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" role="img" aria-label="SNSPD Equivalent Electrical Readout Circuit">
+  <rect width="760" height="280" rx="14" fill="#070d1f" stroke="#1e293b" />
+  <text x="28" y="34" fill="#f1f5f9" font-family="sans-serif" font-size="16" font-weight="bold">
+    Simplified Equivalent Circuit of an SNSPD Readout
+  </text>
+
+  <!-- Bias current source -->
+  <circle cx="95" cy="155" r="28" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+  <line x1="95" y1="173" x2="95" y2="141" stroke="#38bdf8" stroke-width="2.5" />
+  <polygon points="89,144 101,144 95,134" fill="#38bdf8" />
+  <text x="95" y="205" text-anchor="middle" fill="#7dd3fc" font-family="sans-serif" font-size="12">DC Bias I_B</text>
+
+  <!-- Main rails -->
+  <line x1="95" y1="127" x2="95" y2="80" stroke="#64748b" stroke-width="2.5" />
+  <line x1="95" y1="80" x2="585" y2="80" stroke="#64748b" stroke-width="2.5" />
+  <line x1="95" y1="183" x2="95" y2="230" stroke="#64748b" stroke-width="2.5" />
+  <line x1="95" y1="230" x2="585" y2="230" stroke="#64748b" stroke-width="2.5" />
+
+  <!-- Kinetic inductance Lk -->
+  <path d="M270 80 v16 q14 6 0 12 q14 6 0 12 q14 6 0 12 q14 6 0 12 v10" fill="none" stroke="#22d3ee" stroke-width="2.8" />
+  <text x="242" y="122" text-anchor="end" fill="#22d3ee" font-family="monospace" font-size="13">Lk</text>
+
+  <!-- Hotspot switch + Rn -->
+  <rect x="252" y="156" width="36" height="44" rx="4" fill="#1e293b" stroke="#fb923c" stroke-width="2" />
+  <text x="270" y="182" text-anchor="middle" fill="#fdba74" font-family="monospace" font-size="12">Rn(t)</text>
+  <line x1="270" y1="200" x2="270" y2="230" stroke="#64748b" stroke-width="2.5" />
+  <text x="270" y="252" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">Nanowire Branch</text>
+
+  <!-- Load resistor RL = 50 Ohm -->
+  <line x1="470" y1="80" x2="470" y2="115" stroke="#64748b" stroke-width="2.5" />
+  <rect x="452" y="115" width="36" height="65" rx="4" fill="#1e293b" stroke="#a78bfa" stroke-width="2" />
+  <text x="470" y="152" text-anchor="middle" fill="#c4b5fd" font-family="monospace" font-size="12">RL=50Ω</text>
+  <line x1="470" y1="180" x2="470" y2="230" stroke="#64748b" stroke-width="2.5" />
+
+  <!-- Output node -->
+  <line x1="470" y1="80" x2="625" y2="80" stroke="#34d399" stroke-width="2.5" stroke-dasharray="5 4" />
+  <circle cx="630" cy="80" r="5" fill="#34d399" />
+  <text x="642" y="84" fill="#6ee7b7" font-family="sans-serif" font-size="12" font-weight="bold">Vout(t) to LNA</text>
+
+  <!-- Formula box -->
+  <rect x="525" y="125" width="205" height="68" rx="8" fill="#0f172a" stroke="#334155" />
+  <text x="540" y="150" fill="#cbd5e1" font-family="monospace" font-size="12">τ_rise ≈ Lk / (Rn + RL)</text>
+  <text x="540" y="174" fill="#cbd5e1" font-family="monospace" font-size="12">τ_fall ≈ Lk / RL</text>
+</svg>
